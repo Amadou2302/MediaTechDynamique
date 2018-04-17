@@ -1,0 +1,37 @@
+nav ul
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	background-color: #333333;
+}
+
+nav li
+{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	border-right: 2px black solid ;
+	text-align: center;
+	line-height: 40px;
+
+}
+
+ul li a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+nav li:hover
+{
+	background-color: #191970;
+}
+
+h1
+{
+	text-align: center;
+	color: skyblue;
+}
+
