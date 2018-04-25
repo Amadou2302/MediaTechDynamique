@@ -14,8 +14,8 @@
 									
 									<li> 	<a href="#accueil.php">MA CHAINE</a> </li>
 									<li> 	<a href="info.php">VOS AVIS </a> </li>
+									<li> 	<a href="pageAdmin.php"> Adminitration </a> </li>
 									<li> 	<a href="connexion.php"> Déconnexion </a> </li>
-
 							</ul>
 
 

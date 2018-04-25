@@ -45,7 +45,7 @@ if(isset($_POST['forminscription'])) {
                      $insertmbr->execute(array($pseudo, $mail, $mdp));
 
                      //création de la variable erreur qui sera appelé à chaque erreur commit lors de l'inscription
-                     $erreur = "Votre compte a bien été créé ! <a href=\"connexion.php\">Accéder à la page de connexion?</a>";
+                      header('location:connexion.php');
                   } else {
                      $erreur = "Vos mots de passes ne correspondent pas !";
                   }
