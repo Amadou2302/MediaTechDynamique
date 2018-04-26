@@ -52,7 +52,7 @@ $pdostat = $bdd->prepare('SELECT * FROM membres');
 
 				</nav>
 
-	<div style="margin-left:100px;margin-top: 50px;background-image: url(a.jpeg);margin-right: 100px;color: #E5E7E9 " >
+	<div style="margin-left:100px;margin-top: 50px;background-image: url(a.jpeg);margin-right: 100px;color:#E5E7E9">
 
 
 

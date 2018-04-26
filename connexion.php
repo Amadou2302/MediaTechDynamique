@@ -42,26 +42,31 @@ $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', 'auf');
    <head>
       <title>CONNEXION</title>
       <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 
     
    </head>
    <body style="background-image: url(IMG.jpg);">
+    <br>
+  <div align="left" style=": #7B625F">   <a href="inscription.php" >   <button type="submit" class="btn btn-danger" value="inscription">S'inscrire</button> </a>
 
+     <div align="center" style="background-color: skyblue; margin-top: 80px; border-radius: 60px 20px 60px 20px;width:600px; margin-left: 400px;height: 300px;" >  
 
-     <div align="center" >  <br> <br><br>
-
-     	<div align="left" style=": #7B625F">  <b><font color="black"> Retouner à la page d'inscription pour </font>  <a href="inscription.php" > <input type="button"  value="S'inscrire" style="background-color:#E5E8E8"> </div>   </a>
+    
      	 <font color="black">
          <u><h1>Connexion</h1></font></u>
          <br /><br />
          <form method="POST" action="">
-         	 <b> <label for="mailconnect"> <font color="black"> Saisir email:</font></label>
-            <input type="email" size="30px" name="mailconnect" placeholder="ex:am@gmail.com" /><br /><br/><br/>
+         	 <b> <label for="mailconnect"> <font color="black"> Saisir email:</font></label> <br>
+            <input type="email" size="30px" name="mailconnect" placeholder="ex:am@gmail.com" /><br/><br/>
 
-           <b>  <label for="mailconnect"><font color="white"> Mot de passe: </font></label>
-            <input type="password" size="30px" name="mdpconnect" placeholder="Mot de passe" /><br/><br/>
+           <b>  <label for="mailconnect"><font color="white"> Mot de passe: </font></label> <br>
+            <input type="password" size="30px" name="mdpconnect" placeholder="Mot de passe" /><br/>
             <br />
-            <input type="submit" name="formconnexion" style="background-color:#EAECEE " value="Se connecter" />
+             <button type="submit" name="formconnexion" class="btn btn-danger" value="Se connecter">Se connecter</button>
+
+           
          </form>
          <?php
          if(isset($erreur)) {

@@ -71,15 +71,14 @@ if(isset($_POST['forminscription'])) {
    <head>
       <title>Inscription formumaire</title>
       <meta charset="utf-8">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
    </head>
    <body style="background-image: url(IMG.jpg);background-size: 100%;">
 
-      
+       <h3> <font color=" #E5E8E8  ">    <b> <div align="right" style="background-color:black ">   Vous avez dèja un compte?  <a href="connexion.php"> <button type="button" class="btn btn-danger" value="Se connecter">Se connecter</button> </a></div></b> </h3> </div>   
 
-  
-      <div  align="center" >
-         <font color="#000000  "> <u> <h1>Inscription</h1></font></u>
+      <div align="center" style="background-color: skyblue; margin-top: 20px; border-radius: 60px 20px 60px 20px;width:680px; margin-left: 330px;height: 440px;" >           <font color="#000000  "> <u>        <h1>Inscription</h1></font></u>
          <br /><br />
          <form method="POST" action=""> <br> 
             <table>
@@ -87,7 +86,7 @@ if(isset($_POST['forminscription'])) {
 
                <tr>
                   <td align="right">
-              <h3>  <font color="#79F8F8">  <b>  <label for="pseudo">Pseudo :</label> </b> </h3>
+              <h4>  <font color="black">  <b>  <label for="pseudo">Pseudo :</label> </b> </h4>
                   </td></font>
                   <td>
                      <input type="text"  size="35px" placeholder="Votre pseudo" id="pseudo" name="pseudo"  />
@@ -96,7 +95,7 @@ if(isset($_POST['forminscription'])) {
 
                <tr>
                   <td align="right">
-               <h3> <font color="#79F8F8">    <b> <label for="mail">Mail :</label></b> </h3>
+               <h4> <font color="black">    <b> <label for="mail">Mail :</label></b> </h4>
                   </td>
                   <td>
                      <input type="email" size="35px" placeholder="Votre mail" id="mail" name="mail"  />
@@ -105,7 +104,7 @@ if(isset($_POST['forminscription'])) {
 
                <tr>
                   <td align="right">
-                  <h3>  <font color="#79F8F8">  <b>  <label for="mail2">Confirmation du mail :</label></b>  </h3>
+                  <h4>  <font color="black">  <b>  <label for="mail2">Confirmation du mail :</label></b>  </h4>
                   </td>
                   <td>
                      <input type="email" size="35px" placeholder="Confirmez votre mail" id="mail2" name="mail2"  />
@@ -113,7 +112,7 @@ if(isset($_POST['forminscription'])) {
                </tr>
                <tr>
                   <td align="right">
-              <h3>   <font color="#79F8F8">   <b>  <label for="mdp">Mot de passe :</label></b>  </h3>
+              <h4>   <font color="black">   <b>  <label for="mdp">Mot de passe :</label></b>  </h4>
                   </td>
                   <td>
                      <input type="password" size="35px" placeholder="Votre mot de passe" id="mdp" name="mdp" />
@@ -121,7 +120,7 @@ if(isset($_POST['forminscription'])) {
                </tr>
                <tr>
                   <td align="right">
-              <h3>  <font color="#79F8F8">    <b>  <label for="mdp2">Confirmation du mot de passe :</label></b> </h3> 
+              <h4>  <font color="black">    <b>  <label for="mdp2">Confirmation du mot de passe :</label></b> </h4> 
                   </td>
                   <td>
                      <input type="password" size="35px" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
@@ -131,10 +130,13 @@ if(isset($_POST['forminscription'])) {
                   <td></td>
                   <td align="center">
                      <br />
-                     <input type="submit" name="forminscription" value="Je m'inscris" style="background-color: #79F8F8  " />  <br> <br><br>
-             <div style="margin-left: 100px">     
-          <h2> <font color=" #E5E8E8  ">    <b> <div align="right" style="background-color:black ">   Vous avez dèja un compte?  <a href="connexion.php"  >  <input type="button" value="Se connecter" style="background-color:#79F8F8      ">   </a></div></b> </h2> </div>   
+                       <button type="submit" name="forminscription" class="btn btn-success btn-lg" value="Je m'inscris">S'inscrire</button>
+  
+                       <br> <br><br>
+             <div style="margin-left: 100px">  
 
+           
+         
 
                   </td>
                </tr>

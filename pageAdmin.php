@@ -42,12 +42,15 @@ $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', 'auf');
    <head>
       <title>CONNEXION</title>
       <meta charset="utf-8">
-            <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
-    
    </head>
    <body style="background-image: url(IMG.jpg);">
+
+    <font color="skyblue">  <u><h1>Réservé à l'Administrateur</h1></u></font>
+
 
     <nav>
               <ul>
@@ -62,18 +65,22 @@ $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', 'auf');
         </nav>
 
 
-     <div align="center" style="background-color: red; margin-top: 150px; border-radius: 20px 20px 20px 20px;width:600px; margin-left: 400px;height: 300px;" >  <br> <br><br>
+
+
+     <div align="center" style="background-color: red; margin-top: 80px; border-radius: 60px 20px 60px 20px;width:600px; margin-left: 400px;height: 300px;" >  <br> <br><br>
 
      	
      	
          <form method="POST" action="">
-         	 <b> <label for="mailconnect"> <font color="black"> Saisir email:</font></label>
+         	 <b> <label for="mailconnect"> <font color="black"> Saisir email:</font></label> <br>
             <input type="email" size="30px" name="mailconnect" placeholder="ex:am@gmail.com" /><br /><br/><br/>
 
-           <b>  <label for="mailconnect"><font color="white"> Mot de passe: </font></label>
+           <b>  <label for="mailconnect"><font color="white"> Mot de passe: </font></label> <br>
             <input type="password" size="30px" name="mdpconnect" placeholder="Mot de passe" /><br/><br/>
             <br />
-            <input type="submit" name="connexion" style="background-color:#EAECEE " value="Se connecter" />
+           
+
+            <button type="submit" name="connexion" class="btn btn-info  btn-lg-default">Se connecter</button>
          </form>
          <?php
          if(isset($erreur)) {
