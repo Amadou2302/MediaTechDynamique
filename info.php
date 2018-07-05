@@ -4,6 +4,7 @@
 		<head>
 				<title>Media Tech Dynamique</title>
 				<link rel="stylesheet" type="text/css" href="style.css">
+				 <link rel="shortcut icon"  href="b.png">
 
 		</head>
 	<body>

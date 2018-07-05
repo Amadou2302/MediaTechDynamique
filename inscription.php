@@ -62,7 +62,7 @@ if(isset($_POST['forminscription'])) {
          $erreur = "Votre pseudo ne doit pas dépasser 255 caractères !";
       }
    } else {
-      $erreur = "Tous les champs doivent être complétés !";
+      $erreur = "Veuillez remplir tous les champs SVP !";
    }
 }
 ?>
@@ -73,12 +73,14 @@ if(isset($_POST['forminscription'])) {
       <meta charset="utf-8">
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+      <link rel="shortcut icon"  href="b.png">
+
    </head>
    <body style="background-image: url(IMG.jpg);background-size: 100%;">
 
        <h3> <font color=" #E5E8E8  ">    <b> <div align="right" style="background-color:black ">   Vous avez dèja un compte?  <a href="connexion.php"> <button type="button" class="btn btn-danger" value="Se connecter">Se connecter</button> </a></div></b> </h3> </div>   
 
-      <div align="center" style="background-color: skyblue; margin-top: 20px; border-radius: 60px 20px 60px 20px;width:680px; margin-left: 330px;height: 440px;" >           <font color="#000000  "> <u>        <h1>Inscription</h1></font></u>
+      <div align="center" style="background-color:rgb(84, 162, 240,0.85);  margin-top: 20px; border-radius: 100px 20px 100px 20px;width:680px; margin-left: 330px;height: 440px;" >           <font color="#000000  "> <u>        <h1>Inscription</h1></font></u>
          <br /><br />
          <form method="POST" action=""> <br> 
             <table>
@@ -89,7 +91,7 @@ if(isset($_POST['forminscription'])) {
               <h4>  <font color="black">  <b>  <label for="pseudo">Pseudo :</label> </b> </h4>
                   </td></font>
                   <td>
-                     <input type="text"  size="35px" placeholder="Votre pseudo" id="pseudo" name="pseudo"  />
+                     <input type="text"  size="35px" placeholder="Votre pseudo" id="pseudo" name="pseudo" />
                   </td>
                </tr>
 

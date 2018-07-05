@@ -28,7 +28,9 @@ $pdostat = $bdd->prepare('SELECT * FROM membres');
 			<script src="jquery-ui-1.10.4.custom.min.js"></script>
 			<script src="jquery-ui-1.10.4.custom.min.css"></script>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+    	  <link rel="shortcut icon"  href="b.png">
 
 
 
@@ -64,14 +66,21 @@ $pdostat = $bdd->prepare('SELECT * FROM membres');
 <table border="2px solid black" style="width: 100%;height: 50px">
 
 	<h3>	
+		<tr>
 
+			<td style="font-size: bold" width="50px" align="center"><h4><font style="color: black"> <?= $users['id'] ?> </font></h4></td>
+			<td width="100px" align="center"><h4> <font style="color: black"> <?= $users['pseudo'] ?> </font> </h4> </td>
+			<td width="250px" align="center"><h4><font style="color: black"> <?= $users['mail'] ?></font> </h4></td>
+			<td align="center"><h4> <font style="color: black"><?= $users['motdepasse'] ?></font> </h4></td> 
 
-			<td style="font-size: bold"><h4><font style="color: black"> <?= $users['id'] ?> </font></h4></td>
-			<td><h4> <font style="color: black"> <?= $users['pseudo'] ?> </font> </h4> </td>
-			<td><h4><font style="color: black"> <?= $users['mail'] ?></font> </h4></td>
-			<td><h4> <font style="color: black"><?= $users['motdepasse'] ?></font> </h4></td>  <td><div style="float: right;margin-right:30px "><a href="modification.php?id=<?= $users['id'] ?>"><button type="button" class="btn btn-success">Modifier</button></a>  </div> 
-			</td> <td>
-				<div style="float: right;margin-right:30px "><a class="ab" href="supprimer.php?id=<?= $users['id'] ?>"><button type="button" class="btn btn-danger">Supprimer</button></a>  </div> </td>
+			<td align="center" width="150px"><a href="modification.php?id=<?= $users['id'] ?>"><button type="button" class="btn btn-success">Modifier</button></a> 
+			</td> 
+
+			<td align="center" width="150px">
+				<a class="ab" href="supprimer.php?id=<?= $users['id'] ?>"><button type="button" class="btn btn-danger">Supprimer</button></a> 
+			</td>
+
+		</tr>
 
 		
 	</h3>	
@@ -86,8 +95,7 @@ $pdostat = $bdd->prepare('SELECT * FROM membres');
 $('a.ab').confirm({
 		title:'Confirmation',	
 		theme:'supervan',
-
-    content: "Voulez vous vraiment supprimer ce membre?",
+    	content: "Voulez vous vraiment supprimer ce membre?",
 
 
 

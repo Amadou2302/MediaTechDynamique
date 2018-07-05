@@ -45,6 +45,8 @@ $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', 'auf');
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+      <link rel="shortcut icon"  href="b.png">
+
 
    </head>
    <body style="background-image: url(IMG.jpg);">
@@ -67,7 +69,7 @@ $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', 'auf');
 
 
 
-     <div align="center" style="background-color: red; margin-top: 80px; border-radius: 60px 20px 60px 20px;width:600px; margin-left: 400px;height: 300px;" >  <br> <br><br>
+     <div align="center" style="background-color:rgb(33, 50, 146 ,0.85); margin-top: 80px; border-radius: 60px 20px 60px 20px;width:600px; margin-left: 400px;height: 300px;" >  <br> <br><br>
 
      	
      	

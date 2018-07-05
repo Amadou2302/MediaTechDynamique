@@ -16,7 +16,8 @@ if ($executeIsOk) {
 }
 else
 {
-	$message = 'Membre bien supprimer';
+		  header('location:utilisateurs.php');
+		  
 }
 
 ?>
@@ -29,6 +30,7 @@ else
 			<meta name="viewport" content="widht=device-widht, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 			<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="shortcut icon"  href="b.png">
 		</head>
 
 		<body>
